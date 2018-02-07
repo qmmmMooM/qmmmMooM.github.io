@@ -1,1 +1,30 @@
-无问西东
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayDate()
+{
+  if(document.getElementById("username").value=="123"&&document.getElementById("password").value=="123")
+      {
+           document.getElementById("demo").innerHTML="登录成功";
+      }
+   else{
+            document.getElementById("demo").innerHTML="用户名或者密码错误";
+            document.getElementById("username").value="";
+            document.getElementById("password").value="";
+     }
+}
+</script>
+</head>
+<body>
+
+用户名：<input type="text" id="username" >
+密码：<input type="text" id="password" >
+
+<button onclick="displayDate()">登录</button>
+<p id="demo"></p>
+
+<p>请输入正确的用户名和密码</p>
+
+</body>
+</html>
